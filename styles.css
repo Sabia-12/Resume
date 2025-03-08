@@ -1,0 +1,164 @@
+ html,body{
+    font-family: 'Arial', sans-serif;
+    width: 80%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #f34949;
+}
+
+.resume-container{
+    display:flex;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow:hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar{
+    width: 30%;
+    background-color: #37536e;
+    color: white;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar .profile img:hover{
+    transform:scale(1.1);
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.sidebar p {
+    font-size: 15px;
+    margin: 5px 0x;
+    opacity:0.8px;
+}
+
+
+.sidebar .contact  {
+    text-align: center;
+    margin-top: 20px;
+    width : 100%;
+}
+
+.sidebar .contact p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.sidebar .skills {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+.sidebar .skills h3 {
+   border-bottom: 2px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sidebar .skills ul {
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+.sidebar .skills li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 8px 0;
+    margin-right: 4% ;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight:600;
+    transition:all 0.3s ease-in-out;
+    
+}
+.sidebar .skills li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    cursor:pointer;
+}
+.content {
+    width: 70%;
+    padding: 30px;
+}
+.section h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.section h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #1bcca8;
+    margin-top: 5px;
+}
+.job, .education, .project {
+    background: #eef4f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 5px solid #1abc9c;
+    box-shadow: 5px 5px 10px rgba(30, 22, 22, 0.1);
+    transition: 0.3s;
+}
+
+.job:hover, .education:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+.job h3, .education h3, .project h3 {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.job p, .education p, .project p {
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 700px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+div{
+    margin: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0%;
+    box-sizing: border-box;
+}
